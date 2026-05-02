@@ -20,7 +20,7 @@ export const NavigationContext = createContext<NavigationContextType | null>(
 export const MapDataContext = createContext<MapDataContextType | null>(null);
 function Map() {
   let [searchParams, setSearchParams] = useSearchParams();
-  const DEFAULT_POSITION = "v1";
+  const DEFAULT_POSITION = "ent17";
   const startPosition = searchParams.get("position") || DEFAULT_POSITION;
   const [navigation, setNavigation] = useState<Navigation>({
     start: startPosition,
