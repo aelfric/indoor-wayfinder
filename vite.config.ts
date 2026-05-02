@@ -15,8 +15,5 @@ export default defineConfig(({ mode }) => {
     build: {
       outDir: "dist",
     },
-    esbuild: {
-      pure: mode === "production" ? ["console.log"] : [],
-    },
   };
 });

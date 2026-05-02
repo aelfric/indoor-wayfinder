@@ -61,7 +61,7 @@ function IndoorMapWrapper() {
         doubleClick={{ mode: "reset" }}
         initialScale={isMobile ? 0.4 : 1}
         smooth={true}
-        wheel={{ smoothStep: 0.01 }}
+        wheel={{ step: 0.01}}
       >
         <TransformComponent wrapperClass="bg-white">
           <MapBackground>

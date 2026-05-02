@@ -5,13 +5,13 @@ import {
 } from "@/utils/navigationHelper";
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { FiCircle, FiNavigation } from "react-icons/fi";
-import { useOnClickOutside } from "usehooks-ts";
 import { MapDataContext, NavigationContext } from "../pages/Map";
 import {
   MapDataContextType,
   NavigationContextType,
   ObjectItem,
 } from "../utils/types";
+import { useOnClickOutside } from "@/hooks/useOnClickOutside.ts";
 
 function SearchBar() {
   const [inputValue, setInputValue] = useState<string>("");
@@ -142,7 +142,7 @@ function SearchBar() {
         </div>
         <div className="flex w-full relative">
           <input
-            className={`h-12 p-4 w-full flex-none text-gray-900 text-sm md:text-md ${
+            className={`h-12 p-4 w-full flex-none text-gray-900 text-sm md:text-md bg-white ${
               isInputInvalid && "input-error"
             } `}
             placeholder="Search"
