@@ -56,7 +56,7 @@ function Map() {
         <div className="flex bg-gray-100 text-gray-800 relative overflow-hidden w-full h-screen">
           {isDesktop && <Sidebar />}
           <main
-            className={`flex w-full ${isDesktop && "-ml-96"} justify-center flex-grow flex-col md:p-10 p-2 transition-all duration-150 ease-in lg:ml-0`}
+            className={`flex w-full ${isDesktop && "-ml-96"} justify-center grow flex-col md:p-10 p-2 transition-all duration-150 ease-in lg:ml-0`}
           >
             <Toolbar />
             <div className="center w-full h-full">

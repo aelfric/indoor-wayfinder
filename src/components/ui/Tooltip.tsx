@@ -6,19 +6,19 @@ interface TooltipProps {
   children: React.ReactNode;
 }
 
-function Tooltip({ className, content, children }: TooltipProps) {
+function Tooltip({ className, content, children }: Readonly<TooltipProps>) {
   const [isVisible, setIsVisible] = useState(false);
   const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   useEffect(() => {
     const detectTouch = () => {
       setIsTouchDevice(true);
-      window.removeEventListener("touchstart", detectTouch);
+      globalThis.removeEventListener("touchstart", detectTouch);
     };
-    window.addEventListener("touchstart", detectTouch, { once: true });
+    globalThis.addEventListener("touchstart", detectTouch, { once: true });
 
     return () => {
-      window.removeEventListener("touchstart", detectTouch);
+      globalThis.removeEventListener("touchstart", detectTouch);
     };
   }, []);
 
@@ -32,7 +32,9 @@ function Tooltip({ className, content, children }: TooltipProps) {
     <div className="relative flex items-center">
       <div
         onMouseOver={() => !isTouchDevice && setIsVisible(true)}
+        onFocus={() => !isTouchDevice && setIsVisible(true)}
         onMouseOut={() => !isTouchDevice && setIsVisible(false)}
+        onBlur={() => !isTouchDevice && setIsVisible(false)}
         onClick={toggleVisibility}
       >
         {children}

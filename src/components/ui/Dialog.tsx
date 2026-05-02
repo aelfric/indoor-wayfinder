@@ -6,7 +6,7 @@ interface DialogProps {
   children: React.ReactNode;
 }
 
-export function Dialog({ open, handler, children }: DialogProps) {
+export function Dialog({ open, handler, children }: Readonly<DialogProps>) {
   const dialogRef = useRef<HTMLDivElement>(null);
   const [showDialog, setShowDialog] = useState(open);
   const [animationPhase, setAnimationPhase] = useState<"fadeIn" | "fadeOut">(
@@ -44,16 +44,15 @@ export function Dialog({ open, handler, children }: DialogProps) {
   };
 
   return (
-    <div
+    <dialog
       className={`fixed inset-0 z-50 ${showDialog ? "block" : "hidden"}`}
       aria-modal="true"
       aria-hidden={!showDialog}
-      role="dialog"
     >
-      <div
+      <button
         className="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm"
         onClick={handler}
-      ></div>
+      ></button>
       <div
         className="fixed inset-0 flex justify-center items-center"
         style={{ pointerEvents: "none" }}
@@ -67,11 +66,11 @@ export function Dialog({ open, handler, children }: DialogProps) {
           {children}
         </div>
       </div>
-    </div>
+    </dialog>
   );
 }
 
-export function DialogHeader({ children }: { children: React.ReactNode }) {
+export function DialogHeader({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <div className="flex items-center shrink-0 p-4 pb-0 text-blue-gray-900 antialiased font-sans text-2xl font-semibold leading-snug center">
       {children}
@@ -79,17 +78,9 @@ export function DialogHeader({ children }: { children: React.ReactNode }) {
   );
 }
 
-export function DialogBody({ children }: { children: React.ReactNode }) {
+export function DialogBody({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <div className="relative p-4 text-blue-gray-500 antialiased font-sans text-base font-light leading-relaxed">
-      {children}
-    </div>
-  );
-}
-
-export function DialogFooter({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="flex items-center justify-end shrink-0 flex-wrap p-4 text-blue-gray-500 pt-0">
       {children}
     </div>
   );

@@ -10,7 +10,7 @@ import Loading from "./pages/Loading";
 function App() {
   return (
     <Suspense fallback={<Loading />}>
-      <div className="flex flex-col relative w-full max-h-[100dvh]">
+      <div className="flex flex-col relative w-full max-h-dvh">
         <Routes>
           <Route path="/:postion?" element={<Map />} />
         </Routes>
