@@ -1,5 +1,11 @@
 import { graphData } from "../src/store/graphData";
 import { objects } from "../src/components/IndoorMap/Objects";
+import * as fs from "fs";
+import * as path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 interface VertexData {
   id: string;
@@ -143,7 +149,13 @@ function main() {
     ...createEdgesFromVertices(graphData.vertices)
   ];
 
-  console.log(JSON.stringify({ vertices, edges }, null, 2));
+  const graphDataJson = { vertices, edges };
+  
+  // Write to JSON file
+  const outputPath = path.join(__dirname, "../src/assets/generated-edges.json");
+  fs.writeFileSync(outputPath, JSON.stringify(graphDataJson, null, 2), "utf-8");
+  
+  console.log(`Generated ${edges.length} edges and saved to ${outputPath}`);
 }
 
 main();
