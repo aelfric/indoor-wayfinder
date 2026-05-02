@@ -46,7 +46,9 @@ function Positions({
           cx={vertex.cx}
           cy={vertex.cy}
           r={positionRadius}
-        />
+        >
+          <title>{vertex.id}</title>
+        </circle>
       ))}
       {/* Circle animation */}
       <circle
