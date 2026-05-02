@@ -73,7 +73,7 @@ function IndoorMapWrapper() {
               }
             />
             {/*Edges are the lines on the map aka the paths*/}
-            <Paths />
+            <Paths isEditMode={isEditMode} />
             {/*Vertexes are the circles on the map aka the positions*/}
             <Positions
               positionRadius={positionRadius}

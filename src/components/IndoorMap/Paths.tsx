@@ -1,6 +1,10 @@
 import { graphData } from "@/store/graphData";
 
-function Paths() {
+interface PathsProps {
+  isEditMode?: boolean;
+}
+
+function Paths({ isEditMode = false }: Readonly<PathsProps>) {
   return (
     <g id="Edges">
       {graphData.edges.map((edge) => {
@@ -10,7 +14,7 @@ function Paths() {
         );
         const toVertex = graphData.vertices.find((vertex) => vertex.id === to);
         if (fromVertex && toVertex) {
-          const pathClassName = "path";
+          const pathClassName = `path ${isEditMode ? "path-edit" : ""}`;
           const pathD = `M${fromVertex.cx} ${fromVertex.cy}L${toVertex.cx} ${toVertex.cy}`;
           return <path key={id} id={id} className={pathClassName} d={pathD} />;
         }
