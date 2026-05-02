@@ -1,5 +1,6 @@
 import { graphData } from "@/store/graphData";
 import { NavigationContextType } from "@/utils/types";
+import React from "react";
 
 interface PositionsProps {
   positionRadius: number;
@@ -12,7 +13,7 @@ function Positions({
   handlePositionClick,
   className,
   navigation,
-}: PositionsProps) {
+}: Readonly<PositionsProps>) {
   const positionBackgroundColor = "#4285f4";
   const positionBackgroundRadius = positionRadius + 7;
   const positonBackgroundOpacity = 0.2;

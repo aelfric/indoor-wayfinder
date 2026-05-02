@@ -14,9 +14,8 @@ function ObjectItemDetailsDialog({
   onClose,
   object,
   objectNavigation,
-}: ObjectItemDetailsDialogProps) {
+}: Readonly<ObjectItemDetailsDialogProps>) {
   return (
-    <>
       <Dialog
         open={open}
         handler={() => {
@@ -42,7 +41,6 @@ function ObjectItemDetailsDialog({
           </div>
         </DialogBody>
       </Dialog>
-    </>
   );
 }
 

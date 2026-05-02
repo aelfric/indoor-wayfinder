@@ -1,7 +1,7 @@
 import IndoorMapWrapper from "@/components/IndoorMapWrapper";
 import MobileRouteDetails from "@/components/MobileRouteDetails";
 import Toolbar from "@/components/Toolbar";
-import { createContext, useEffect, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import { isDesktop, isMobile } from "react-device-detect";
 import { useSearchParams } from "react-router-dom";
 import {
@@ -20,19 +20,19 @@ export const NavigationContext = createContext<NavigationContextType | null>(
 export const MapDataContext = createContext<MapDataContextType | null>(null);
 function Map() {
   let [searchParams, setSearchParams] = useSearchParams();
-  const DEFAULT_POSITION = "v35";
+  const DEFAULT_POSITION = "v1";
   const startPosition = searchParams.get("position") || DEFAULT_POSITION;
   const [navigation, setNavigation] = useState<Navigation>({
     start: startPosition,
     end: "",
   });
   const [isEditMode, setIsEditMode] = useState<boolean>(false);
-  const navigationValue: NavigationContextType = {
+  const navigationValue: NavigationContextType = React.useMemo(()=>({
     navigation,
     setNavigation,
     isEditMode,
     setIsEditMode,
-  };
+  }), [navigation, setNavigation, isEditMode, setIsEditMode]);
   const categories: Category[] = db.categories;
   const objects = (): ObjectItem[] => {
     const objectsData: ObjectItem[] = db.objects;
@@ -49,7 +49,7 @@ function Map() {
     setSearchParams({ position: navigation.start });
   }, [navigation.start]);
 
-  const mapData = { objects: objects(), categories };
+  const mapData = React.useMemo(()=>({ objects: objects(), categories }), [objects, categories]);
   return (
     <MapDataContext.Provider value={mapData}>
       <NavigationContext.Provider value={navigationValue}>
