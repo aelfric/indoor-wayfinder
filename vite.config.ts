@@ -6,7 +6,7 @@ import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 
 export default defineConfig(({ mode }) => {
   return {
-    base: "https://aelfri.github.io/indoor-wayfinder/",
+    base: "https://aelfric.github.io/indoor-wayfinder/",
     plugins: [react(), ViteImageOptimizer({})],
     resolve: {
       alias: {
