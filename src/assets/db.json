@@ -2,1455 +2,1471 @@
   "objects": [
     {
       "id": "101",
-      "categoryId": "cubicles",
       "name": "101",
-      "desc": "Cubicle 101"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 101"
     },
     {
       "id": "102",
-      "categoryId": "cubicles",
       "name": "102",
-      "desc": "Cubicle 102"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 102"
     },
     {
       "id": "103",
-      "categoryId": "cubicles",
       "name": "103",
-      "desc": "Cubicle 103"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 103"
     },
     {
       "id": "104",
-      "categoryId": "cubicles",
       "name": "104",
-      "desc": "Cubicle 104"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 104"
     },
     {
       "id": "105",
-      "categoryId": "cubicles",
       "name": "105",
-      "desc": "Cubicle 105"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 105"
     },
     {
       "id": "106",
-      "categoryId": "cubicles",
       "name": "106",
-      "desc": "Cubicle 106"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 106"
     },
     {
       "id": "107",
-      "categoryId": "cubicles",
       "name": "107",
-      "desc": "Cubicle 107"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 107"
     },
     {
       "id": "108",
-      "categoryId": "cubicles",
       "name": "108",
-      "desc": "Cubicle 108"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 108"
     },
     {
       "id": "109",
-      "categoryId": "cubicles",
       "name": "109",
-      "desc": "Cubicle 109"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 109"
     },
     {
       "id": "201",
-      "categoryId": "cubicles",
       "name": "201",
-      "desc": "Cubicle 201"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 201"
     },
     {
       "id": "202",
-      "categoryId": "cubicles",
       "name": "202",
-      "desc": "Cubicle 202"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 202"
     },
     {
       "id": "203",
-      "categoryId": "cubicles",
       "name": "203",
-      "desc": "Cubicle 203"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 203"
     },
     {
       "id": "204",
-      "categoryId": "cubicles",
       "name": "204",
-      "desc": "Cubicle 204"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 204"
     },
     {
       "id": "205",
-      "categoryId": "cubicles",
       "name": "205",
-      "desc": "Cubicle 205"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 205"
     },
     {
       "id": "206",
-      "categoryId": "cubicles",
       "name": "206",
-      "desc": "Cubicle 206"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 206"
     },
     {
       "id": "301",
-      "categoryId": "cubicles",
       "name": "301",
-      "desc": "Cubicle 301"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 301"
     },
     {
       "id": "302",
-      "categoryId": "cubicles",
       "name": "302",
-      "desc": "Cubicle 302"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 302"
     },
     {
       "id": "303",
-      "categoryId": "cubicles",
       "name": "303",
-      "desc": "Cubicle 303"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 303"
     },
     {
       "id": "304",
-      "categoryId": "cubicles",
       "name": "304",
-      "desc": "Cubicle 304"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 304"
     },
     {
       "id": "305",
-      "categoryId": "cubicles",
       "name": "305",
-      "desc": "Cubicle 305"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 305"
     },
     {
       "id": "306",
-      "categoryId": "cubicles",
       "name": "306",
-      "desc": "Cubicle 306"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 306"
     },
     {
       "id": "401",
-      "categoryId": "cubicles",
       "name": "401",
-      "desc": "Cubicle 401"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 401"
     },
     {
       "id": "402",
-      "categoryId": "cubicles",
       "name": "402",
-      "desc": "Cubicle 402"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 402"
     },
     {
       "id": "403",
-      "categoryId": "cubicles",
       "name": "403",
-      "desc": "Cubicle 403"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 403"
     },
     {
       "id": "404",
-      "categoryId": "cubicles",
       "name": "404",
-      "desc": "Cubicle 404"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 404"
     },
     {
       "id": "405",
-      "categoryId": "cubicles",
       "name": "405",
-      "desc": "Cubicle 405"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 405"
     },
     {
       "id": "406",
-      "categoryId": "cubicles",
       "name": "406",
-      "desc": "Cubicle 406"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 406"
     },
     {
       "id": "407",
-      "categoryId": "cubicles",
       "name": "407",
-      "desc": "Cubicle 407"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 407"
     },
     {
       "id": "408",
-      "categoryId": "cubicles",
       "name": "408",
-      "desc": "Cubicle 408"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 408"
     },
     {
       "id": "409",
-      "categoryId": "cubicles",
       "name": "409",
-      "desc": "Cubicle 409"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 409"
     },
     {
       "id": "501",
-      "categoryId": "cubicles",
       "name": "501",
-      "desc": "Cubicle 501"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 501"
     },
     {
       "id": "502",
-      "categoryId": "cubicles",
       "name": "502",
-      "desc": "Cubicle 502"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 502"
     },
     {
       "id": "503",
-      "categoryId": "cubicles",
       "name": "503",
-      "desc": "Cubicle 503"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 503"
     },
     {
       "id": "504",
-      "categoryId": "cubicles",
       "name": "504",
-      "desc": "Cubicle 504"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 504"
     },
     {
       "id": "505",
-      "categoryId": "cubicles",
       "name": "505",
-      "desc": "Cubicle 505"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 505"
     },
     {
       "id": "506",
-      "categoryId": "cubicles",
       "name": "506",
-      "desc": "Cubicle 506"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 506"
     },
     {
       "id": "507",
-      "categoryId": "cubicles",
       "name": "507",
-      "desc": "Cubicle 507"
+      "categoryId": "black",
+      "desc": "Extemp Cubicle 507"
     },
     {
       "id": "601",
-      "categoryId": "cubicles",
       "name": "601",
-      "desc": "Cubicle 601"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 601"
     },
     {
       "id": "602",
-      "categoryId": "cubicles",
       "name": "602",
-      "desc": "Cubicle 602"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 602"
     },
     {
       "id": "603",
-      "categoryId": "cubicles",
       "name": "603",
-      "desc": "Cubicle 603"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 603"
     },
     {
       "id": "604",
-      "categoryId": "cubicles",
       "name": "604",
-      "desc": "Cubicle 604"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 604"
     },
     {
       "id": "605",
-      "categoryId": "cubicles",
       "name": "605",
-      "desc": "Cubicle 605"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 605"
     },
     {
       "id": "606",
-      "categoryId": "cubicles",
       "name": "606",
-      "desc": "Cubicle 606"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 606"
     },
     {
       "id": "607",
-      "categoryId": "cubicles",
       "name": "607",
-      "desc": "Cubicle 607"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 607"
     },
     {
       "id": "608",
-      "categoryId": "cubicles",
       "name": "608",
-      "desc": "Cubicle 608"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 608"
     },
     {
       "id": "609",
-      "categoryId": "cubicles",
       "name": "609",
-      "desc": "Cubicle 609"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 609"
     },
     {
       "id": "610",
-      "categoryId": "cubicles",
       "name": "610",
-      "desc": "Cubicle 610"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 610"
     },
     {
       "id": "611",
-      "categoryId": "cubicles",
       "name": "611",
-      "desc": "Cubicle 611"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 611"
     },
     {
       "id": "612",
-      "categoryId": "cubicles",
       "name": "612",
-      "desc": "Cubicle 612"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 612"
     },
     {
       "id": "613",
-      "categoryId": "cubicles",
       "name": "613",
-      "desc": "Cubicle 613"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 613"
     },
     {
       "id": "701",
-      "categoryId": "cubicles",
       "name": "701",
-      "desc": "Cubicle 701"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 701"
     },
     {
       "id": "702",
-      "categoryId": "cubicles",
       "name": "702",
-      "desc": "Cubicle 702"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 702"
     },
     {
       "id": "703",
-      "categoryId": "cubicles",
       "name": "703",
-      "desc": "Cubicle 703"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 703"
     },
     {
       "id": "704",
-      "categoryId": "cubicles",
       "name": "704",
-      "desc": "Cubicle 704"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 704"
     },
     {
       "id": "705",
-      "categoryId": "cubicles",
       "name": "705",
-      "desc": "Cubicle 705"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 705"
     },
     {
       "id": "706",
-      "categoryId": "cubicles",
       "name": "706",
-      "desc": "Cubicle 706"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 706"
     },
     {
       "id": "707",
-      "categoryId": "cubicles",
       "name": "707",
-      "desc": "Cubicle 707"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 707"
     },
     {
       "id": "708",
-      "categoryId": "cubicles",
       "name": "708",
-      "desc": "Cubicle 708"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 708"
     },
     {
       "id": "801",
-      "categoryId": "cubicles",
       "name": "801",
-      "desc": "Cubicle 801"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 801"
     },
     {
       "id": "802",
-      "categoryId": "cubicles",
       "name": "802",
-      "desc": "Cubicle 802"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 802"
     },
     {
       "id": "803",
-      "categoryId": "cubicles",
       "name": "803",
-      "desc": "Cubicle 803"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 803"
     },
     {
       "id": "804",
-      "categoryId": "cubicles",
       "name": "804",
-      "desc": "Cubicle 804"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 804"
     },
     {
       "id": "805",
-      "categoryId": "cubicles",
       "name": "805",
-      "desc": "Cubicle 805"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 805"
     },
     {
       "id": "806",
-      "categoryId": "cubicles",
       "name": "806",
-      "desc": "Cubicle 806"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 806"
     },
     {
       "id": "807",
-      "categoryId": "cubicles",
       "name": "807",
-      "desc": "Cubicle 807"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 807"
     },
     {
       "id": "808",
-      "categoryId": "cubicles",
       "name": "808",
-      "desc": "Cubicle 808"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 808"
     },
     {
       "id": "901",
-      "categoryId": "cubicles",
       "name": "901",
-      "desc": "Cubicle 901"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 901"
     },
     {
       "id": "902",
-      "categoryId": "cubicles",
       "name": "902",
-      "desc": "Cubicle 902"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 902"
     },
     {
       "id": "903",
-      "categoryId": "cubicles",
       "name": "903",
-      "desc": "Cubicle 903"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 903"
     },
     {
       "id": "904",
-      "categoryId": "cubicles",
       "name": "904",
-      "desc": "Cubicle 904"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 904"
     },
     {
       "id": "905",
-      "categoryId": "cubicles",
       "name": "905",
-      "desc": "Cubicle 905"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 905"
     },
     {
       "id": "906",
-      "categoryId": "cubicles",
       "name": "906",
-      "desc": "Cubicle 906"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 906"
     },
     {
       "id": "907",
-      "categoryId": "cubicles",
       "name": "907",
-      "desc": "Cubicle 907"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 907"
     },
     {
       "id": "908",
-      "categoryId": "cubicles",
       "name": "908",
-      "desc": "Cubicle 908"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 908"
     },
     {
       "id": "909",
-      "categoryId": "cubicles",
       "name": "909",
-      "desc": "Cubicle 909"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 909"
     },
     {
       "id": "910",
-      "categoryId": "cubicles",
       "name": "910",
-      "desc": "Cubicle 910"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 910"
     },
     {
       "id": "911",
-      "categoryId": "cubicles",
       "name": "911",
-      "desc": "Cubicle 911"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 911"
     },
     {
       "id": "912",
-      "categoryId": "cubicles",
       "name": "912",
-      "desc": "Cubicle 912"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 912"
     },
     {
       "id": "913",
-      "categoryId": "cubicles",
       "name": "913",
-      "desc": "Cubicle 913"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 913"
     },
     {
       "id": "1001",
-      "categoryId": "cubicles",
       "name": "1001",
-      "desc": "Cubicle 1001"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 1001"
     },
     {
       "id": "1002",
-      "categoryId": "cubicles",
       "name": "1002",
-      "desc": "Cubicle 1002"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 1002"
     },
     {
       "id": "1003",
-      "categoryId": "cubicles",
       "name": "1003",
-      "desc": "Cubicle 1003"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 1003"
     },
     {
       "id": "1004",
-      "categoryId": "cubicles",
       "name": "1004",
-      "desc": "Cubicle 1004"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 1004"
     },
     {
       "id": "1005",
-      "categoryId": "cubicles",
       "name": "1005",
-      "desc": "Cubicle 1005"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 1005"
     },
     {
       "id": "1006",
-      "categoryId": "cubicles",
       "name": "1006",
-      "desc": "Cubicle 1006"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 1006"
     },
     {
       "id": "1007",
-      "categoryId": "cubicles",
       "name": "1007",
-      "desc": "Cubicle 1007"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 1007"
     },
     {
       "id": "1008",
-      "categoryId": "cubicles",
       "name": "1008",
-      "desc": "Cubicle 1008"
+      "categoryId": "gray",
+      "desc": "Declamation/Oratory Cubicle 1008"
     },
     {
       "id": "1101",
-      "categoryId": "cubicles",
       "name": "1101",
-      "desc": "Cubicle 1101"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1101"
     },
     {
       "id": "1102",
-      "categoryId": "cubicles",
       "name": "1102",
-      "desc": "Cubicle 1102"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1102"
     },
     {
       "id": "1103",
-      "categoryId": "cubicles",
       "name": "1103",
-      "desc": "Cubicle 1103"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1103"
     },
     {
       "id": "1104",
-      "categoryId": "cubicles",
       "name": "1104",
-      "desc": "Cubicle 1104"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1104"
     },
     {
       "id": "1105",
-      "categoryId": "cubicles",
       "name": "1105",
-      "desc": "Cubicle 1105"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1105"
     },
     {
       "id": "1106",
-      "categoryId": "cubicles",
       "name": "1106",
-      "desc": "Cubicle 1106"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1106"
     },
     {
       "id": "1107",
-      "categoryId": "cubicles",
       "name": "1107",
-      "desc": "Cubicle 1107"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1107"
     },
     {
       "id": "1108",
-      "categoryId": "cubicles",
       "name": "1108",
-      "desc": "Cubicle 1108"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1108"
     },
     {
       "id": "1109",
-      "categoryId": "cubicles",
       "name": "1109",
-      "desc": "Cubicle 1109"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1109"
     },
     {
       "id": "1110",
-      "categoryId": "cubicles",
       "name": "1110",
-      "desc": "Cubicle 1110"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1110"
     },
     {
       "id": "1201",
-      "categoryId": "cubicles",
       "name": "1201",
-      "desc": "Cubicle 1201"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1201"
     },
     {
       "id": "1202",
-      "categoryId": "cubicles",
       "name": "1202",
-      "desc": "Cubicle 1202"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1202"
     },
     {
       "id": "1203",
-      "categoryId": "cubicles",
       "name": "1203",
-      "desc": "Cubicle 1203"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1203"
     },
     {
       "id": "1204",
-      "categoryId": "cubicles",
       "name": "1204",
-      "desc": "Cubicle 1204"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1204"
     },
     {
       "id": "1205",
-      "categoryId": "cubicles",
       "name": "1205",
-      "desc": "Cubicle 1205"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1205"
     },
     {
       "id": "1206",
-      "categoryId": "cubicles",
       "name": "1206",
-      "desc": "Cubicle 1206"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1206"
     },
     {
       "id": "1207",
-      "categoryId": "cubicles",
       "name": "1207",
-      "desc": "Cubicle 1207"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1207"
     },
     {
       "id": "1208",
-      "categoryId": "cubicles",
       "name": "1208",
-      "desc": "Cubicle 1208"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1208"
     },
     {
       "id": "1209",
-      "categoryId": "cubicles",
       "name": "1209",
-      "desc": "Cubicle 1209"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1209"
     },
     {
       "id": "1301",
-      "categoryId": "cubicles",
       "name": "1301",
-      "desc": "Cubicle 1301"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1301"
     },
     {
       "id": "1302",
-      "categoryId": "cubicles",
       "name": "1302",
-      "desc": "Cubicle 1302"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1302"
     },
     {
       "id": "1303",
-      "categoryId": "cubicles",
       "name": "1303",
-      "desc": "Cubicle 1303"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1303"
     },
     {
       "id": "1304",
-      "categoryId": "cubicles",
       "name": "1304",
-      "desc": "Cubicle 1304"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1304"
     },
     {
       "id": "1305",
-      "categoryId": "cubicles",
       "name": "1305",
-      "desc": "Cubicle 1305"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1305"
     },
     {
       "id": "1306",
-      "categoryId": "cubicles",
       "name": "1306",
-      "desc": "Cubicle 1306"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1306"
     },
     {
       "id": "1307",
-      "categoryId": "cubicles",
       "name": "1307",
-      "desc": "Cubicle 1307"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1307"
     },
     {
       "id": "1308",
-      "categoryId": "cubicles",
       "name": "1308",
-      "desc": "Cubicle 1308"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1308"
     },
     {
       "id": "1309",
-      "categoryId": "cubicles",
       "name": "1309",
-      "desc": "Cubicle 1309"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1309"
     },
     {
       "id": "1401",
-      "categoryId": "cubicles",
       "name": "1401",
-      "desc": "Cubicle 1401"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1401"
     },
     {
       "id": "1402",
-      "categoryId": "cubicles",
       "name": "1402",
-      "desc": "Cubicle 1402"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1402"
     },
     {
       "id": "1403",
-      "categoryId": "cubicles",
       "name": "1403",
-      "desc": "Cubicle 1403"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1403"
     },
     {
       "id": "1404",
-      "categoryId": "cubicles",
       "name": "1404",
-      "desc": "Cubicle 1404"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1404"
     },
     {
       "id": "1405",
-      "categoryId": "cubicles",
       "name": "1405",
-      "desc": "Cubicle 1405"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1405"
     },
     {
       "id": "1406",
-      "categoryId": "cubicles",
       "name": "1406",
-      "desc": "Cubicle 1406"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1406"
     },
     {
       "id": "1407",
-      "categoryId": "cubicles",
       "name": "1407",
-      "desc": "Cubicle 1407"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1407"
     },
     {
       "id": "1408",
-      "categoryId": "cubicles",
       "name": "1408",
-      "desc": "Cubicle 1408"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1408"
     },
     {
       "id": "1409",
-      "categoryId": "cubicles",
       "name": "1409",
-      "desc": "Cubicle 1409"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1409"
     },
     {
       "id": "1410",
-      "categoryId": "cubicles",
       "name": "1410",
-      "desc": "Cubicle 1410"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1410"
     },
     {
       "id": "1411",
-      "categoryId": "cubicles",
       "name": "1411",
-      "desc": "Cubicle 1411"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1411"
     },
     {
       "id": "1412",
-      "categoryId": "cubicles",
       "name": "1412",
-      "desc": "Cubicle 1412"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1412"
     },
     {
       "id": "1413",
-      "categoryId": "cubicles",
       "name": "1413",
-      "desc": "Cubicle 1413"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1413"
     },
     {
       "id": "1414",
-      "categoryId": "cubicles",
       "name": "1414",
-      "desc": "Cubicle 1414"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1414"
     },
     {
       "id": "1501",
-      "categoryId": "cubicles",
       "name": "1501",
-      "desc": "Cubicle 1501"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1501"
     },
     {
       "id": "1502",
-      "categoryId": "cubicles",
       "name": "1502",
-      "desc": "Cubicle 1502"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1502"
     },
     {
       "id": "1503",
-      "categoryId": "cubicles",
       "name": "1503",
-      "desc": "Cubicle 1503"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1503"
     },
     {
       "id": "1504",
-      "categoryId": "cubicles",
       "name": "1504",
-      "desc": "Cubicle 1504"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1504"
     },
     {
       "id": "1505",
-      "categoryId": "cubicles",
       "name": "1505",
-      "desc": "Cubicle 1505"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1505"
     },
     {
       "id": "1506",
-      "categoryId": "cubicles",
       "name": "1506",
-      "desc": "Cubicle 1506"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1506"
     },
     {
       "id": "1507",
-      "categoryId": "cubicles",
       "name": "1507",
-      "desc": "Cubicle 1507"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1507"
     },
     {
       "id": "1508",
-      "categoryId": "cubicles",
       "name": "1508",
-      "desc": "Cubicle 1508"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1508"
     },
     {
       "id": "1509",
-      "categoryId": "cubicles",
       "name": "1509",
-      "desc": "Cubicle 1509"
+      "categoryId": "blue",
+      "desc": "Public Forum Cubicle 1509"
     },
     {
       "id": "1601",
-      "categoryId": "cubicles",
       "name": "1601",
-      "desc": "Cubicle 1601"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1601"
     },
     {
       "id": "1602",
-      "categoryId": "cubicles",
       "name": "1602",
-      "desc": "Cubicle 1602"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1602"
     },
     {
       "id": "1603",
-      "categoryId": "cubicles",
       "name": "1603",
-      "desc": "Cubicle 1603"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1603"
     },
     {
       "id": "1604",
-      "categoryId": "cubicles",
       "name": "1604",
-      "desc": "Cubicle 1604"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1604"
     },
     {
       "id": "1605",
-      "categoryId": "cubicles",
       "name": "1605",
-      "desc": "Cubicle 1605"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1605"
     },
     {
       "id": "1606",
-      "categoryId": "cubicles",
       "name": "1606",
-      "desc": "Cubicle 1606"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1606"
     },
     {
       "id": "1607",
-      "categoryId": "cubicles",
       "name": "1607",
-      "desc": "Cubicle 1607"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1607"
     },
     {
       "id": "1608",
-      "categoryId": "cubicles",
       "name": "1608",
-      "desc": "Cubicle 1608"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1608"
     },
     {
       "id": "1609",
-      "categoryId": "cubicles",
       "name": "1609",
-      "desc": "Cubicle 1609"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1609"
     },
     {
       "id": "1701",
-      "categoryId": "cubicles",
       "name": "1701",
-      "desc": "Cubicle 1701"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1701"
     },
     {
       "id": "1702",
-      "categoryId": "cubicles",
       "name": "1702",
-      "desc": "Cubicle 1702"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1702"
     },
     {
       "id": "1703",
-      "categoryId": "cubicles",
       "name": "1703",
-      "desc": "Cubicle 1703"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1703"
     },
     {
       "id": "1704",
-      "categoryId": "cubicles",
       "name": "1704",
-      "desc": "Cubicle 1704"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1704"
     },
     {
       "id": "1705",
-      "categoryId": "cubicles",
       "name": "1705",
-      "desc": "Cubicle 1705"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1705"
     },
     {
       "id": "1706",
-      "categoryId": "cubicles",
       "name": "1706",
-      "desc": "Cubicle 1706"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1706"
     },
     {
       "id": "1707",
-      "categoryId": "cubicles",
       "name": "1707",
-      "desc": "Cubicle 1707"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1707"
     },
     {
       "id": "1708",
-      "categoryId": "cubicles",
       "name": "1708",
-      "desc": "Cubicle 1708"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1708"
     },
     {
       "id": "1709",
-      "categoryId": "cubicles",
       "name": "1709",
-      "desc": "Cubicle 1709"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1709"
     },
     {
       "id": "1710",
-      "categoryId": "cubicles",
       "name": "1710",
-      "desc": "Cubicle 1710"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1710"
     },
     {
       "id": "1711",
-      "categoryId": "cubicles",
       "name": "1711",
-      "desc": "Cubicle 1711"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1711"
     },
     {
       "id": "1712",
-      "categoryId": "cubicles",
       "name": "1712",
-      "desc": "Cubicle 1712"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1712"
     },
     {
       "id": "1713",
-      "categoryId": "cubicles",
       "name": "1713",
-      "desc": "Cubicle 1713"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1713"
     },
     {
       "id": "1714",
-      "categoryId": "cubicles",
       "name": "1714",
-      "desc": "Cubicle 1714"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1714"
     },
     {
       "id": "1801",
-      "categoryId": "cubicles",
       "name": "1801",
-      "desc": "Cubicle 1801"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1801"
     },
     {
       "id": "1802",
-      "categoryId": "cubicles",
       "name": "1802",
-      "desc": "Cubicle 1802"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1802"
     },
     {
       "id": "1803",
-      "categoryId": "cubicles",
       "name": "1803",
-      "desc": "Cubicle 1803"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1803"
     },
     {
       "id": "1804",
-      "categoryId": "cubicles",
       "name": "1804",
-      "desc": "Cubicle 1804"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1804"
     },
     {
       "id": "1805",
-      "categoryId": "cubicles",
       "name": "1805",
-      "desc": "Cubicle 1805"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1805"
     },
     {
       "id": "1806",
-      "categoryId": "cubicles",
       "name": "1806",
-      "desc": "Cubicle 1806"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1806"
     },
     {
       "id": "1807",
-      "categoryId": "cubicles",
       "name": "1807",
-      "desc": "Cubicle 1807"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1807"
     },
     {
       "id": "1808",
-      "categoryId": "cubicles",
       "name": "1808",
-      "desc": "Cubicle 1808"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1808"
     },
     {
       "id": "1809",
-      "categoryId": "cubicles",
       "name": "1809",
-      "desc": "Cubicle 1809"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1809"
     },
     {
       "id": "1901",
-      "categoryId": "cubicles",
       "name": "1901",
-      "desc": "Cubicle 1901"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1901"
     },
     {
       "id": "1902",
-      "categoryId": "cubicles",
       "name": "1902",
-      "desc": "Cubicle 1902"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1902"
     },
     {
       "id": "1903",
-      "categoryId": "cubicles",
       "name": "1903",
-      "desc": "Cubicle 1903"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1903"
     },
     {
       "id": "1904",
-      "categoryId": "cubicles",
       "name": "1904",
-      "desc": "Cubicle 1904"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1904"
     },
     {
       "id": "1905",
-      "categoryId": "cubicles",
       "name": "1905",
-      "desc": "Cubicle 1905"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1905"
     },
     {
       "id": "1906",
-      "categoryId": "cubicles",
       "name": "1906",
-      "desc": "Cubicle 1906"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1906"
     },
     {
       "id": "1907",
-      "categoryId": "cubicles",
       "name": "1907",
-      "desc": "Cubicle 1907"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1907"
     },
     {
       "id": "1908",
-      "categoryId": "cubicles",
       "name": "1908",
-      "desc": "Cubicle 1908"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1908"
     },
     {
       "id": "1909",
-      "categoryId": "cubicles",
       "name": "1909",
-      "desc": "Cubicle 1909"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 1909"
     },
     {
       "id": "2001",
-      "categoryId": "cubicles",
       "name": "2001",
-      "desc": "Cubicle 2001"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 2001"
     },
     {
       "id": "2002",
-      "categoryId": "cubicles",
       "name": "2002",
-      "desc": "Cubicle 2002"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 2002"
     },
     {
       "id": "2003",
-      "categoryId": "cubicles",
       "name": "2003",
-      "desc": "Cubicle 2003"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 2003"
     },
     {
       "id": "2004",
-      "categoryId": "cubicles",
       "name": "2004",
-      "desc": "Cubicle 2004"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 2004"
     },
     {
       "id": "2005",
-      "categoryId": "cubicles",
       "name": "2005",
-      "desc": "Cubicle 2005"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 2005"
     },
     {
       "id": "2006",
-      "categoryId": "cubicles",
       "name": "2006",
-      "desc": "Cubicle 2006"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 2006"
     },
     {
       "id": "2007",
-      "categoryId": "cubicles",
       "name": "2007",
-      "desc": "Cubicle 2007"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 2007"
     },
     {
       "id": "2008",
-      "categoryId": "cubicles",
       "name": "2008",
-      "desc": "Cubicle 2008"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 2008"
     },
     {
       "id": "2009",
-      "categoryId": "cubicles",
       "name": "2009",
-      "desc": "Cubicle 2009"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 2009"
     },
     {
       "id": "2010",
-      "categoryId": "cubicles",
       "name": "2010",
-      "desc": "Cubicle 2010"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 2010"
     },
     {
       "id": "2011",
-      "categoryId": "cubicles",
       "name": "2011",
-      "desc": "Cubicle 2011"
+      "categoryId": "white",
+      "desc": "Lincoln-Douglas Cubicle 2011"
     },
     {
       "id": "2101",
-      "categoryId": "cubicles",
       "name": "2101",
-      "desc": "Cubicle 2101"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2101"
     },
     {
       "id": "2102",
-      "categoryId": "cubicles",
       "name": "2102",
-      "desc": "Cubicle 2102"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2102"
     },
     {
       "id": "2103",
-      "categoryId": "cubicles",
       "name": "2103",
-      "desc": "Cubicle 2103"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2103"
     },
     {
       "id": "2104",
-      "categoryId": "cubicles",
       "name": "2104",
-      "desc": "Cubicle 2104"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2104"
     },
     {
       "id": "2105",
-      "categoryId": "cubicles",
       "name": "2105",
-      "desc": "Cubicle 2105"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2105"
     },
     {
       "id": "2106",
-      "categoryId": "cubicles",
       "name": "2106",
-      "desc": "Cubicle 2106"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2106"
     },
     {
       "id": "2107",
-      "categoryId": "cubicles",
       "name": "2107",
-      "desc": "Cubicle 2107"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2107"
     },
     {
       "id": "2108",
-      "categoryId": "cubicles",
       "name": "2108",
-      "desc": "Cubicle 2108"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2108"
     },
     {
       "id": "2201",
-      "categoryId": "cubicles",
       "name": "2201",
-      "desc": "Cubicle 2201"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2201"
     },
     {
       "id": "2202",
-      "categoryId": "cubicles",
       "name": "2202",
-      "desc": "Cubicle 2202"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2202"
     },
     {
       "id": "2203",
-      "categoryId": "cubicles",
       "name": "2203",
-      "desc": "Cubicle 2203"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2203"
     },
     {
       "id": "2204",
-      "categoryId": "cubicles",
       "name": "2204",
-      "desc": "Cubicle 2204"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2204"
     },
     {
       "id": "2205",
-      "categoryId": "cubicles",
       "name": "2205",
-      "desc": "Cubicle 2205"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2205"
     },
     {
       "id": "2206",
-      "categoryId": "cubicles",
       "name": "2206",
-      "desc": "Cubicle 2206"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2206"
     },
     {
       "id": "2207",
-      "categoryId": "cubicles",
       "name": "2207",
-      "desc": "Cubicle 2207"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2207"
     },
     {
       "id": "2208",
-      "categoryId": "cubicles",
       "name": "2208",
-      "desc": "Cubicle 2208"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2208"
     },
     {
       "id": "2209",
-      "categoryId": "cubicles",
       "name": "2209",
-      "desc": "Cubicle 2209"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2209"
     },
     {
       "id": "2210",
-      "categoryId": "cubicles",
       "name": "2210",
-      "desc": "Cubicle 2210"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2210"
     },
     {
       "id": "2211",
-      "categoryId": "cubicles",
       "name": "2211",
-      "desc": "Cubicle 2211"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2211"
     },
     {
       "id": "2212",
-      "categoryId": "cubicles",
       "name": "2212",
-      "desc": "Cubicle 2212"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2212"
     },
     {
       "id": "2213",
-      "categoryId": "cubicles",
       "name": "2213",
-      "desc": "Cubicle 2213"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2213"
     },
     {
       "id": "2301",
-      "categoryId": "cubicles",
       "name": "2301",
-      "desc": "Cubicle 2301"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2301"
     },
     {
       "id": "2302",
-      "categoryId": "cubicles",
       "name": "2302",
-      "desc": "Cubicle 2302"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2302"
     },
     {
       "id": "2303",
-      "categoryId": "cubicles",
       "name": "2303",
-      "desc": "Cubicle 2303"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2303"
     },
     {
       "id": "2304",
-      "categoryId": "cubicles",
       "name": "2304",
-      "desc": "Cubicle 2304"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2304"
     },
     {
       "id": "2305",
-      "categoryId": "cubicles",
       "name": "2305",
-      "desc": "Cubicle 2305"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2305"
     },
     {
       "id": "2306",
-      "categoryId": "cubicles",
       "name": "2306",
-      "desc": "Cubicle 2306"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2306"
     },
     {
       "id": "2307",
-      "categoryId": "cubicles",
       "name": "2307",
-      "desc": "Cubicle 2307"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2307"
     },
     {
       "id": "2308",
-      "categoryId": "cubicles",
       "name": "2308",
-      "desc": "Cubicle 2308"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2308"
     },
     {
       "id": "2401",
-      "categoryId": "cubicles",
       "name": "2401",
-      "desc": "Cubicle 2401"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2401"
     },
     {
       "id": "2402",
-      "categoryId": "cubicles",
       "name": "2402",
-      "desc": "Cubicle 2402"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2402"
     },
     {
       "id": "2403",
-      "categoryId": "cubicles",
       "name": "2403",
-      "desc": "Cubicle 2403"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2403"
     },
     {
       "id": "2404",
-      "categoryId": "cubicles",
       "name": "2404",
-      "desc": "Cubicle 2404"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2404"
     },
     {
       "id": "2405",
-      "categoryId": "cubicles",
       "name": "2405",
-      "desc": "Cubicle 2405"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2405"
     },
     {
       "id": "2406",
-      "categoryId": "cubicles",
       "name": "2406",
-      "desc": "Cubicle 2406"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2406"
     },
     {
       "id": "2407",
-      "categoryId": "cubicles",
       "name": "2407",
-      "desc": "Cubicle 2407"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2407"
     },
     {
       "id": "2408",
-      "categoryId": "cubicles",
       "name": "2408",
-      "desc": "Cubicle 2408"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2408"
     },
     {
       "id": "2409",
-      "categoryId": "cubicles",
       "name": "2409",
-      "desc": "Cubicle 2409"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2409"
     },
     {
       "id": "2501",
-      "categoryId": "cubicles",
       "name": "2501",
-      "desc": "Cubicle 2501"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2501"
     },
     {
       "id": "2502",
-      "categoryId": "cubicles",
       "name": "2502",
-      "desc": "Cubicle 2502"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2502"
     },
     {
       "id": "2503",
-      "categoryId": "cubicles",
       "name": "2503",
-      "desc": "Cubicle 2503"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2503"
     },
     {
       "id": "2504",
-      "categoryId": "cubicles",
       "name": "2504",
-      "desc": "Cubicle 2504"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2504"
     },
     {
       "id": "2505",
-      "categoryId": "cubicles",
       "name": "2505",
-      "desc": "Cubicle 2505"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2505"
     },
     {
       "id": "2506",
-      "categoryId": "cubicles",
       "name": "2506",
-      "desc": "Cubicle 2506"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2506"
     },
     {
       "id": "2507",
-      "categoryId": "cubicles",
       "name": "2507",
-      "desc": "Cubicle 2507"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2507"
     },
     {
       "id": "2508",
-      "categoryId": "cubicles",
       "name": "2508",
-      "desc": "Cubicle 2508"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2508"
     },
     {
       "id": "2509",
-      "categoryId": "cubicles",
       "name": "2509",
-      "desc": "Cubicle 2509"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2509"
     },
     {
       "id": "2510",
-      "categoryId": "cubicles",
       "name": "2510",
-      "desc": "Cubicle 2510"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2510"
     },
     {
       "id": "2511",
-      "categoryId": "cubicles",
       "name": "2511",
-      "desc": "Cubicle 2511"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2511"
     },
     {
       "id": "2512",
-      "categoryId": "cubicles",
       "name": "2512",
-      "desc": "Cubicle 2512"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2512"
     },
     {
       "id": "2513",
-      "categoryId": "cubicles",
       "name": "2513",
-      "desc": "Cubicle 2513"
+      "categoryId": "red",
+      "desc": "Policy Debate Cubicle 2513"
     }
   ],
   "categories": [
     {
-      "id": "cubicles",
-      "name": "Cubicles"
+      "id": "black",
+      "name": "Extemp Cubicle"
+    },
+    {
+      "id": "gray",
+      "name": "Declamation/Oratory Cubicle"
+    },
+    {
+      "id": "blue",
+      "name": "Public Forum Cubicle"
+    },
+    {
+      "id": "white",
+      "name": "Lincoln-Douglas Cubicle"
+    },
+    {
+      "id": "red",
+      "name": "Policy Debate Cubicle"
     }
   ]
 }
