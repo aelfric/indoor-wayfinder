@@ -1,4 +1,3 @@
-import { graphData } from "../src/store/graphData";
 import { objects } from "../src/components/IndoorMap/Objects";
 import * as fs from "fs";
 import * as path from "path";
@@ -21,6 +20,7 @@ interface EdgeData {
 }
 
 function createVertices(): VertexData[] {
+  // every object gets a vertex at its center and one at its entrance
   return objects.flatMap((o) => [
     {
       id: `v${o.id}e`,
@@ -32,121 +32,137 @@ function createVertices(): VertexData[] {
   ]);
 }
 
-function createCorridor(): VertexData[] {
-  return [
+function createCorridor(prefix: string, cy: number): VertexData[] {
+  // create points at a specific Y coordinate lined up with the entrance to each
+  // cubicle
+  const corridorXs = [
     ...new Set(objects.map((o) => (o.entrance == "left" ? o.x - 5 : o.x + 25))),
-  ].map((x, index) => ({
-    id: `ent${index + 1}`,
+  ];
+
+  const MAX_CORRIDOR_SEGMENT = 18;
+  const expandedXs: number[] = [];
+
+  for (let i = 0; i < corridorXs.length; i++) {
+    const x = corridorXs[i];
+    if (i > 0) {
+      const prevX = corridorXs[i - 1];
+      const gap = x - prevX;
+      if (gap > MAX_CORRIDOR_SEGMENT) {
+        const numSegments = Math.ceil(gap / MAX_CORRIDOR_SEGMENT);
+        const segmentSize = gap / numSegments;
+        for (let j = 1; j < numSegments; j++) {
+          expandedXs.push(prevX + j * segmentSize);
+        }
+      }
+    }
+    expandedXs.push(x);
+  }
+
+  return expandedXs.map((x, index) => ({
+    id: `${prefix}${index + 1}`,
     cx: x,
-    cy: 348, // yeah, magic number but based on the real SVG
+    cy: cy,
     objectName: null,
   }));
+}
+
+function createEdge(
+  edges: EdgeData[],
+  edgeSet: Set<string>,
+  from: string,
+  to: string
+) {
+  const [first, second] = from < to ? [from, to] : [to, from];
+  const id = `${first}_to_${second}`;
+  if (!edgeSet.has(id)) {
+    edgeSet.add(id);
+    edges.push({ id, from: first, to: second });
+  }
+}
+
+function groupByBand(
+  vertices: VertexData[],
+  getCoordinate: (vertex: VertexData) => number,
+  tolerance: number
+): VertexData[][] {
+  const sorted = [...vertices].sort((a, b) => getCoordinate(a) - getCoordinate(b));
+  const groups: { coordinate: number; items: VertexData[] }[] = [];
+
+  for (const vertex of sorted) {
+    const coordinate = getCoordinate(vertex);
+    const group = groups.find((g) => Math.abs(g.coordinate - coordinate) <= tolerance);
+    if (group) {
+      group.items.push(vertex);
+    } else {
+      groups.push({ coordinate: coordinate, items: [vertex] });
+    }
+  }
+
+  return groups.map((group) => group.items);
+}
+
+function connectHorizontalEdges(
+  vertices: VertexData[],
+  edgeSet: Set<string>,
+  edges: EdgeData[]
+) {
+  const HORIZONTAL_Y_BUFFER = 10;
+  const HORIZONTAL_MAX_GAP = 18;
+  const rows = groupByBand(vertices, (vertex) => vertex.cy, HORIZONTAL_Y_BUFFER);
+
+  for (const row of rows) {
+    const sorted = [...row].sort((a, b) => a.cx - b.cx);
+    for (let i = 0; i < sorted.length - 1; i++) {
+      const current = sorted[i];
+      const next = sorted[i + 1];
+      if (Math.abs(next.cx - current.cx) <= HORIZONTAL_MAX_GAP) {
+        createEdge(edges, edgeSet, current.id, next.id);
+      }
+    }
+  }
+}
+
+function connectVerticalEdges(
+  vertices: VertexData[],
+  edgeSet: Set<string>,
+  edges: EdgeData[]
+) {
+  const VERTICAL_X_BUFFER = 0;
+  const VERTICAL_MAX_GAP = 60;
+  let filteredVertices = vertices.filter(v => v.objectName === null);
+  const columns = groupByBand(filteredVertices, (vertex) => vertex.cx, VERTICAL_X_BUFFER);
+
+  for (const column of columns) {
+    const sorted = [...column].sort((a, b) => a.cy - b.cy);
+    for (let i = 0; i < sorted.length - 1; i++) {
+      const current = sorted[i];
+      const next = sorted[i + 1];
+      if (Math.abs(next.cy - current.cy) <= VERTICAL_MAX_GAP) {
+        createEdge(edges, edgeSet, current.id, next.id);
+      }
+    }
+  }
 }
 
 function createEdgesFromVertices(vertices: VertexData[]): EdgeData[] {
   const edges: EdgeData[] = [];
   const edgeSet = new Set<string>();
 
-  // Partition vertices into regular and "e" variants
-  const regularVertexMap = new Map<number, VertexData>();
-  const eVertexMap = new Map<number, VertexData>();
-
-  vertices.forEach((v) => {
-    const isEVariant = v.id.endsWith("e");
-    const numStr = v.id.replace(/^v/, "").replace(/e$/, "");
-    const num = Number.parseInt(numStr, 10);
-
-    if (isEVariant) {
-      eVertexMap.set(num, v);
-    } else {
-      regularVertexMap.set(num, v);
-    }
-  });
-
-  const eVertexNumbers = Array.from(eVertexMap.keys()).sort((a, b) => a - b);
-
-  // New rule: Connect regular vertex to corresponding e vertex
-  eVertexNumbers.forEach((num) => {
-    if (regularVertexMap.has(num)) {
-      const edgeId = `e${num}e_to_${num}`;
-      edgeSet.add(edgeId);
-      edges.push({
-        id: edgeId,
-        from: `v${num}e`,
-        to: `v${num}`,
-      });
-    }
-  });
-
-  // Rule 2: Connect consecutive e-vertices
-  for (let i = 0; i < eVertexNumbers.length - 1; i++) {
-    const curr = eVertexNumbers[i];
-    const next = eVertexNumbers[i + 1];
-
-    if (next === curr + 1) {
-      const edgeId = `e${curr}e_to_${next}e`;
-      edgeSet.add(edgeId);
-      edges.push({
-        id: edgeId,
-        from: `v${curr}e`,
-        to: `v${next}e`,
-      });
-    }
-  }
-
-  // Rule 3: Connect non-consecutive e-vertices with same y and x distance < 20
-  for (let i = 0; i < eVertexNumbers.length; i++) {
-    for (let j = i + 1; j < eVertexNumbers.length; j++) {
-      const num1 = eVertexNumbers[i];
-      const num2 = eVertexNumbers[j];
-
-      // Skip if consecutive (already handled)
-      if (num2 === num1 + 1) continue;
-
-      const v1 = eVertexMap.get(num1)!;
-      const v2 = eVertexMap.get(num2)!;
-
-      if (v1.cy === v2.cy && Math.abs(v1.cx - v2.cx) < 20) {
-        const edgeId = `e${num1}e_to_${num2}e`;
-        if (!edgeSet.has(edgeId)) {
-          edgeSet.add(edgeId);
-          edges.push({
-            id: edgeId,
-            from: `v${num1}e`,
-            to: `v${num2}e`,
-          });
-        }
-      }
-    }
-  }
+  connectHorizontalEdges(vertices, edgeSet, edges);
+  connectVerticalEdges(vertices, edgeSet, edges);
 
   return edges;
 }
-
-function createCorridorEdges(corridorVertices: VertexData[]) {
-  return corridorVertices.flatMap((_c, i) => [
-    {
-      id: `ent${i}_to_ent${i + 1}`,
-      from: `ent${i}`,
-      to: `ent${i + 1}`,
-    },
-    {
-      id: `ent${i+1}_to_v${i + 1}01`,
-      from: `ent${i+1}`,
-      to: `v${i + 1}01e`,
-    },
-  ]);
-}
-
 function main() {
-  let corridorVertices = createCorridor();
+  let corridorVertices1 = createCorridor(`ent`, 348);
+  let corridorVertices2 = createCorridor(`mid`, 210);
   const vertices = [
-    ...corridorVertices,
+    ...corridorVertices1,
+    ...corridorVertices2,
     ...createVertices()
   ];
   const edges = [
-    ...createCorridorEdges(corridorVertices),
-    ...createEdgesFromVertices(graphData.vertices)
+    ...createEdgesFromVertices(vertices)
   ];
 
   const graphDataJson = { vertices, edges };
