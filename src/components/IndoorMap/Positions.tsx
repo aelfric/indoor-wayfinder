@@ -39,6 +39,7 @@ function Positions({
         <circle
           // only allow click on positions that are not referring to an object
           onClick={vertex.objectName ? () => {} : handlePositionClick}
+          style={{pointerEvents: vertex.objectName ? "none" : "auto"}}
           key={vertex.id}
           id={vertex.id}
           // show only positions that are not referring to an object (e.g. shops, restrooms, etc.)

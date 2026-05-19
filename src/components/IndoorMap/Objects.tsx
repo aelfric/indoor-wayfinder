@@ -338,6 +338,7 @@ function Objects({handleObjectClick, className}: Readonly<ObjectsProps>) {
                     opacity={0.5}
                     x={o.x}
                     y={o.y}
+                    style={{cursor: "pointer"}}
                     onClick={handleObjectClick}
                 />
             )}

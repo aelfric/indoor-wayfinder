@@ -1,5 +1,5 @@
 import floorPlan from "@/assets/img/floorplan-clean.svg";
-import { ReactNode, useEffect, useRef } from "react";
+import { ReactNode, useRef } from "react";
 interface MapBackgroundProps {
   children: ReactNode;
 }
@@ -11,22 +11,20 @@ function MapBackground({ children }: Readonly<MapBackgroundProps>) {
 // Can be used to get mouse position in SVG coordinates
 // just put it inside the MapBackground component and click somewhere on the map to get the coordinates
 // can be very useful for adding new objects or positions
-
-
-  const getMousePositionSVG = async (event: MouseEvent) => {
-    const point = svgRef.current?.createSVGPoint();
-    if (point) {
-      point.x = event.clientX;
-      point.y = event.clientY;
-      const transformedPoint = point.matrixTransform(
-        svgRef.current?.getScreenCTM()?.inverse()
-      );
-      await navigator.clipboard.writeText(JSON.stringify({id: "", x: transformedPoint.x, y: transformedPoint.y}) + ",");
-    }
-  };
-  useEffect(() => {
-    svgRef.current?.addEventListener("click", getMousePositionSVG);
-  }, []);
+  // const getMousePositionSVG = async (event: MouseEvent) => {
+  //   const point = svgRef.current?.createSVGPoint();
+  //   if (point) {
+  //     point.x = event.clientX;
+  //     point.y = event.clientY;
+  //     const transformedPoint = point.matrixTransform(
+  //       svgRef.current?.getScreenCTM()?.inverse()
+  //     );
+  //     await navigator.clipboard.writeText(JSON.stringify({id: "", x: transformedPoint.x, y: transformedPoint.y}) + ",");
+  //   }
+  // };
+  // useEffect(() => {
+  //   svgRef.current?.addEventListener("click", getMousePositionSVG);
+  // }, []);
 
   return (
     <svg
