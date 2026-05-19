@@ -23,7 +23,6 @@ export interface Navigation {
 
 export interface NavigationContextType {
   navigation: Navigation;
-  setNavigation: React.Dispatch<React.SetStateAction<Navigation>>;
   isEditMode: boolean;
   setIsEditMode: React.Dispatch<React.SetStateAction<boolean>>;
 }

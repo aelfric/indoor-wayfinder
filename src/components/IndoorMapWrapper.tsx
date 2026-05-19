@@ -11,15 +11,16 @@ import { MapBackground, Paths, Positions, Objects } from "./IndoorMap";
 
 import Controls from "./MapControls";
 import ObjectDetailsModal from "./ObjectDetailsDialog";
-import { navigateToObject } from "@/utils/navigationHelper";
 import { toast } from "react-toastify";
+import { useNavigationSearchParams } from "@/hooks/useNavigationSearchParams.ts";
 
 function IndoorMapWrapper() {
+  const { setStart, setEnd } = useNavigationSearchParams();
   const [modalOpen, setModalOpen] = useState(false);
   const [object, setObject] = useState<ObjectItem>({} as ObjectItem);
   const positionRadius = isMobile ? 10 : 5;
-  const { navigation, setNavigation, isEditMode, setIsEditMode } = useContext(
-    NavigationContext
+  const { navigation, isEditMode, setIsEditMode } = useContext(
+    NavigationContext,
   ) as NavigationContextType;
   const { objects } = useContext(MapDataContext) as MapDataContextType;
   async function handleObjectClick(e: React.MouseEvent<SVGPathElement>) {
@@ -37,14 +38,14 @@ function IndoorMapWrapper() {
   const handlePositionClick = (e: React.MouseEvent<SVGPathElement>) => {
     if (isEditMode) {
       const vertexId = (e.target as HTMLElement).id;
-      setNavigation({ start: vertexId });
+      setStart(vertexId);
       setIsEditMode(false);
     }
   };
 
   function handleNavigationClick() {
     setModalOpen(false);
-    navigateToObject(object.name, navigation, setNavigation);
+    setEnd(object.name);
   }
   return (
     <div className="relative w-full h-full bg-white center">

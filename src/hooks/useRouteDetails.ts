@@ -9,9 +9,7 @@ import { resetEdges } from "@/utils/navigationHelper";
 
 export function useRouteDetails() {
   const { objects } = useContext(MapDataContext) as MapDataContextType;
-  const { navigation, setNavigation } = useContext(
-    NavigationContext
-  ) as NavigationContextType;
+  const { navigation } = useContext(NavigationContext) as NavigationContextType;
   const [object, setObject] = useState<ObjectItem | null>(null);
   const [routeDetails, setRouteDetails] = useState({
     routeLength: 0,
@@ -52,10 +50,6 @@ export function useRouteDetails() {
 
   function handleLeave() {
     resetEdges();
-    setNavigation((prevNavigation) => ({
-      ...prevNavigation,
-      end: "",
-    }));
   }
 
   return { object, ...routeDetails, handleLeave };

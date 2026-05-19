@@ -1,10 +1,7 @@
-import { Dispatch, SetStateAction } from "react";
 import { graph } from "../algorithms/dijkstra";
-import { Navigation, NavigationContextType } from "./types";
-import { ObjectItem } from "./types";
+import { NavigationContextType } from "./types";
 import { graphData } from "@/store/graphData";
 import { toast } from "react-toastify";
-export let routeLength = 0;
 
 const findVertexByObjectId = (vertexId: string) =>
   graphData.vertices.find((v) => v.objectName === vertexId);
@@ -12,8 +9,8 @@ const findVertexByObjectId = (vertexId: string) =>
 export function navigateToObject(
   selectedObjectId: string,
   navigation: NavigationContextType["navigation"],
-  setNavigation: NavigationContextType["setNavigation"]
 ) {
+  console.log({ selectedObjectId });
   const target = findVertexByObjectId(selectedObjectId);
   if (!target) {
     console.error("Target not found");
@@ -35,7 +32,7 @@ export function navigateToObject(
   if (navigationRoutePath && startVertex) {
     navigationRoutePath.setAttribute(
       "d",
-      `M${startVertex.cx} ${startVertex.cy} ${pathString}`
+      `M${startVertex.cx} ${startVertex.cy} ${pathString}`,
     );
     console.log("navigationRoutePath", navigationRoutePath);
     navigationRoutePath.classList.remove("path-once", "path-active");
@@ -46,14 +43,9 @@ export function navigateToObject(
         navigationRoutePath.classList.remove("path-once");
         navigationRoutePath.classList.add("path-active");
       },
-      { once: true }
+      { once: true },
     );
   }
-
-  setNavigation((prevNavigation) => ({
-    ...prevNavigation,
-    end: selectedObjectId,
-  }));
 }
 
 export function resetEdges() {
@@ -64,21 +56,4 @@ export function resetEdges() {
       element.classList.remove("path-active");
     }
   });
-}
-
-export function navigateWithDelay(
-  objects: ObjectItem[],
-  index: number,
-  delay: number,
-  navigation: Navigation,
-  setNavigation: Dispatch<SetStateAction<Navigation>>
-) {
-  if (index < objects.length) {
-    const obj = objects[index];
-    navigateToObject(obj.name, navigation, setNavigation);
-
-    setTimeout(() => {
-      navigateWithDelay(objects, index + 1, delay, navigation, setNavigation);
-    }, delay);
-  }
 }

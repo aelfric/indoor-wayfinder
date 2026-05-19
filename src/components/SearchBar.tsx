@@ -1,37 +1,26 @@
 import Tooltip from "@/components/ui/Tooltip";
-import {
-  navigateToObject,
-  navigateWithDelay as navigationTestAll,
-} from "@/utils/navigationHelper";
+
 import { useContext, useRef, useState } from "react";
 import { FiCircle, FiNavigation } from "react-icons/fi";
-import { MapDataContext, NavigationContext } from "../pages/Map";
-import { MapDataContextType, NavigationContextType } from "../utils/types";
+import { MapDataContext } from "../pages/Map";
+import { MapDataContextType } from "../utils/types";
+import { useNavigationSearchParams } from "@/hooks/useNavigationSearchParams.ts";
 
 function SearchBar() {
+  const { setEnd } = useNavigationSearchParams();
   const { objects } = useContext(MapDataContext) as MapDataContextType;
   const [isInputInvalid, setIsInputInvalid] = useState<boolean>(false);
   const inputRef = useRef<HTMLInputElement>(null);
-  const { navigation, setNavigation } = useContext(
-    NavigationContext,
-  ) as NavigationContextType;
 
   function handleSearch(inputValue: string) {
     const matchingObject = objects.find(
       (obj) => obj.name.toLowerCase() === inputValue.trim().toLowerCase(),
     );
     if (!matchingObject) {
-      //? To test the navigation feature
-      if (inputValue === "Test") {
-        const delay = 500;
-        navigationTestAll(objects, 0, delay, navigation, setNavigation);
-        return;
-      } else {
-        setIsInputInvalid(true);
-        return;
-      }
+      setIsInputInvalid(true);
+      return;
     }
-    navigateToObject(matchingObject.name, navigation, setNavigation);
+    setEnd(matchingObject.name);
   }
 
   return (
@@ -58,7 +47,7 @@ function SearchBar() {
             placeholder="Search"
             ref={inputRef}
             list={"objects"}
-            onInput={()=> isInputInvalid ? setIsInputInvalid(false) : null}
+            onInput={() => (isInputInvalid ? setIsInputInvalid(false) : null)}
           />
 
           <datalist id={"objects"}>

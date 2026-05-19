@@ -8,8 +8,8 @@ import {
 } from "@/utils/types";
 import { MapDataContext, NavigationContext } from "../pages/Map";
 
-import { navigateToObject } from "@/utils/navigationHelper";
 import { FaInfoCircle } from "react-icons/fa";
+import { useNavigationSearchParams } from "@/hooks/useNavigationSearchParams.ts";
 
 interface ParsedObjects {
   [key: string]: {
@@ -19,24 +19,27 @@ interface ParsedObjects {
 }
 
 function Sidebar() {
-  const { navigation, setNavigation, setIsEditMode } = useContext(
-    NavigationContext
+  const { setEnd } = useNavigationSearchParams();
+  const { setIsEditMode } = useContext(
+    NavigationContext,
   ) as NavigationContextType;
   const { objects } = useContext(MapDataContext) as MapDataContextType;
-  const parsedObjects = useMemo(()=>{
-      const data: ParsedObjects = {};
-      objects.forEach((object) => {
-        const firstLetter = String(Math.trunc(Number.parseInt(object.name)  / 100));
-        if (!data[firstLetter]) {
-          data[firstLetter] = {
-            len: 0,
-            results: [],
-          };
-        }
-        data[firstLetter].results.push(object);
-        data[firstLetter].len += 1;
-      });
-      return data;
+  const parsedObjects = useMemo(() => {
+    const data: ParsedObjects = {};
+    objects.forEach((object) => {
+      const firstLetter = String(
+        Math.trunc(Number.parseInt(object.name) / 100),
+      );
+      if (!data[firstLetter]) {
+        data[firstLetter] = {
+          len: 0,
+          results: [],
+        };
+      }
+      data[firstLetter].results.push(object);
+      data[firstLetter].len += 1;
+    });
+    return data;
   }, [objects]);
 
   function handleObjectNavigation(selectedObjectName: string) {
@@ -44,7 +47,7 @@ function Sidebar() {
     setIsEditMode(false);
     if (!object) return;
     console.log(object);
-    navigateToObject(object.name, navigation, setNavigation);
+    setEnd(object.name);
   }
 
   return (
@@ -63,10 +66,7 @@ function Sidebar() {
         </a>
         <div className="flex items-center flex-none mr-10">
           <div className="rounded-md w-16 h-16 bg-gray-100 center">
-            <img
-              src={logo}
-              alt="PathPal"
-            />
+            <img src={logo} alt="PathPal" />
           </div>
           <div className="flex flex-col">
             <div className="flex flex-col">
@@ -82,7 +82,7 @@ function Sidebar() {
       </header>
       <div className="overflow-auto h-full">
         {Object.keys(parsedObjects)
-          .sort((a, b) => Number.parseInt(a) > Number.parseInt(b) ? 1 : -1)
+          .sort((a, b) => (Number.parseInt(a) > Number.parseInt(b) ? 1 : -1))
           .map((letter) => (
             <div key={letter} className="mb-4">
               <header className="p-2">
