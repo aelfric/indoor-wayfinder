@@ -10,7 +10,6 @@ export function navigateToObject(
   selectedObjectId: string,
   navigation: NavigationContextType["navigation"],
 ) {
-  console.log({ selectedObjectId });
   const target = findVertexByObjectId(selectedObjectId);
   if (!target) {
     console.error("Target not found");

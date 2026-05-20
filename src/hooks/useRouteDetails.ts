@@ -6,8 +6,10 @@ import {
   ObjectItem,
 } from "@/utils/types";
 import { resetEdges } from "@/utils/navigationHelper";
+import { useNavigationSearchParams } from "@/hooks/useNavigationSearchParams.ts";
 
 export function useRouteDetails() {
+  const { setEnd } = useNavigationSearchParams();
   const { objects } = useContext(MapDataContext) as MapDataContextType;
   const { navigation } = useContext(NavigationContext) as NavigationContextType;
   const [object, setObject] = useState<ObjectItem | null>(null);
@@ -33,7 +35,7 @@ export function useRouteDetails() {
 
     const calculateRouteDetails = () => {
       const navigationRoutePath = document.getElementById(
-        "navigation-route"
+        "navigation-route",
       ) as SVGPathElement | null;
       const routeLength = navigationRoutePath?.getTotalLength() || 0;
       const mapRatio = 20; // fictional ratio
@@ -49,6 +51,7 @@ export function useRouteDetails() {
   }, [navigation.end]);
 
   function handleLeave() {
+    setEnd("")
     resetEdges();
   }
 
